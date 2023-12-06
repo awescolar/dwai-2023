@@ -19,8 +19,8 @@ Link do site oficial com a documentação e exemplos
 - Inclui os principais *Breakpoints* (≥1400px, ≥1200px, ≥992px, ≥768px, ≥576px,<576px)
 
 ## Tarefas
-[ ] Fazer clone deste repositório
-[ ] Criar uma ```branch``` com a seguinte nomenclatura: ```seunome-sobrenome```;
-[ ] Montar o layout do seu portfólio utilizando apenas Bootstrap;
-[ ] Após concluir, fazer um ```pull``` e um ```push``` com sua ```branch```;
-[ ] Vá no GSA e marque sua tarefa como concluída, incluindo o link da sua branch.
+- [ ] Fazer clone deste repositório
+- [ ] Criar uma ```branch``` com a seguinte nomenclatura: ```seunome-sobrenome```;
+- [ ] Montar o layout do seu portfólio utilizando apenas Bootstrap;
+- [ ] Após concluir, fazer um ```pull``` e um ```push``` com sua ```branch```;
+- [ ] Vá no GSA e marque sua tarefa como concluída, incluindo o link da sua branch.
