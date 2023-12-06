@@ -1,0 +1,823 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.dark-mode,
+.dark-mode nav,
+.dark-mode .processos-seletivos,
+.dark-mode .conheca-nossos-campi,
+.dark-mode footer .preto {
+  background-color: #202124;
+  color: #ffffff;
+}
+
+.dark-mode .white,
+.dark-mode main .news .news-image-item .link .white,
+.dark-mode main .news .servidores .info .white,
+.dark-mode main .processos-seletivos .tab-container .white,
+.dark-mode main .processos-seletivos .tab-container .final-result .white,
+.dark-mode footer .about .listagem .white,
+.dark-mode main .conheca-nossos-cursos .cursos .curso .white,
+.dark-mode main .categorias-processos-seletivos .category .white,
+.dark-mode main .ifrn-em-numeros .numero-e-textos-e-icone .numero-e-textos .numero,
+.dark-mode main .ifrn-em-numeros .numero-e-textos-e-icone .numero-e-textos .descricao-numero,
+.dark-mode footer .informacoes-institucionais .container .textos h3{
+  color: #ffffff;
+}
+
+.dark-mode .search .acessibility .button button {
+  background-color: #4F4F4F;
+}
+
+.dark-mode .search .acessibility .button button .button-search i {
+  color: #ffffff;
+}
+
+.dark-mode main .processos-seletivos .light-grey {
+  color: #848484;
+}
+
+#button-change-theme,
+.button-change-color {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-mode .image-button,
+.dark-mode .image-button:hover {
+  color: #4caf50;
+}
+
+.dark-mode main .ifrn-em-numeros .numeros .numero-e-textos-e-icone {
+  background-color: #202124;
+  color: #fff;
+}
+
+.dark-mode .button-change-color,
+.dark-mode main .news .button-change-color {
+  background-color: #555;
+  color: #ffffff;
+}
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1340px;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+}
+
+header .top {
+  justify-content: space-between;
+}
+
+nav {
+  background: #fff;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+nav span {
+  cursor: pointer;
+}
+
+nav .itens-nav {
+  gap: 30px;
+}
+
+.ifrn {
+  align-items: flex-end;
+  gap: 44.5px;
+}
+
+.ifrn p {
+  color: #848484;
+  font-size: 12px;
+  font-weight: 400;
+  width: 249px;
+}
+
+.search .icons,
+.search .acessibility {
+  gap: 10px;
+  align-items: center;
+}
+
+.search i {
+  color: #848484;
+  align-self: center;
+}
+
+.search i:hover {
+  color: #062601;
+}
+
+.socialmedia {
+  padding: 11.774px 9px;
+}
+
+.search .bar {
+  width: 1px;
+  height: 26px;
+  background: #eee;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.search .acessibility .button button {
+  padding: 8px 24px 9px 10px;
+  justify-content: flex-start;
+  border-radius: 5px;
+  border: 1px solid #848484;
+  background: #fff;
+  width: 211px;
+  color: #757575;
+  font-family: Arial; /*?????*/
+  font-size: 13.333px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+}
+
+.search .acessibility .button button .button-search {
+  gap: 5px;
+}
+
+.search .acessibility .button button input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+main .images {
+  gap: 40px;
+}
+
+main .maos {
+  position: fixed;
+  right: 10px;
+  top: 444px;
+}
+
+main .images .cards {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+main .images .cards img {
+  transition: ease-in-out 0.3s;
+}
+
+main .images .cards::before {
+  content: "";
+  border-radius: 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 35%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+main .images .cards:hover > img {
+  transform: scale(1.1);
+}
+
+main .images .cards p {
+  width: 202px;
+  color: #fff;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  font-size: 22.5px;
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  padding: 100px 63px 40px 40px;
+  z-index: 2;
+}
+
+main .images div:nth-child(2) p {
+  width: 220px;
+}
+
+main .images div:nth-child(3) p {
+  width: 210px;
+}
+
+main .news {
+  margin-top: 105px;
+}
+
+main .news .news-title {
+  width: 100%;
+  color: #062601;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 32px;
+}
+
+main .news .news-image-list {
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+main .news .news-image-item {
+  gap: 14px;
+}
+
+main .news .news-image-item .link {
+  gap: 9px;
+}
+
+main .news .news-image-item .link h3,
+main .news .servidores .info h3 {
+  color: #062601;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+main .news .news-image-item .link p {
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+main .news .news-image-item img {
+  width: 305px;
+  height: 305px;
+}
+
+main .news .servidores {
+  gap: 40px;
+}
+
+main .news .servidores .info h4 {
+  color: #4f4f4f;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19.5px;
+  margin-bottom: 5.5px;
+}
+
+main .news .servidores .info p {
+  color: #555;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+  line-height: 21px;
+}
+
+main .news .servidores .info p:nth-child(2) {
+  color: #555;
+  margin-top: 9px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+main .news .button {
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+main .news .button button {
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #062601;
+  color: #ffffff;
+}
+
+main .news .button button div {
+  gap: 9.16px;
+}
+
+main .processos-seletivos {
+  margin-top: 116px;
+  background: #eee;
+}
+
+main .processos-seletivos .container {
+  margin-top: 101px;
+  width: 1340px;
+}
+
+main .processos-seletivos h2 {
+  color: #062601;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+main .processos-seletivos .description {
+  color: #4f4f4f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+  width: 787px;
+  margin-top: 19px;
+}
+
+main .processos-seletivos h3 {
+  color: #666;
+  font-size: 22.5px;
+  font-weight: 300;
+  line-height: 31.5px;
+  margin-top: 50px;
+}
+
+main .processos-seletivos .tabs {
+  gap: 19.8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 12px;
+  margin-top: 20.5px;
+  width: 100%;
+}
+
+main .processos-seletivos .tabs .button {
+  height: 17px;
+  text-align: center;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+main .processos-seletivos .tabs .selected {
+  color: #147a02;
+  width: 111.87px;
+}
+
+main .processos-seletivos .tabs .line {
+  border-bottom: 2px solid #147a02;
+  margin-top: 12px;
+}
+
+main .processos-seletivos .tabs .button:nth-child(2) {
+  width: 130px;
+}
+
+main .tab-container {
+  margin-top: 51.6px;
+  gap: 60px;
+}
+
+main .tab-container .processo-seletivo h5 {
+  color: #4f4f4f;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 19.5px;
+}
+
+main .tab-container .processo-seletivo h4 {
+  color: #062601;
+  font-size: 20px;
+  width: 80%;
+  margin-top: 5.5px;
+  font-weight: 700;
+}
+
+main .tab-container .processo-seletivo .edital {
+  color: #062601;
+  font-size: 15px;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+main .green-bold-text,
+main .acess-process {
+  color: #4caf50;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+main .tab-container .processo-seletivo .final-result {
+  margin-top: 14px;
+}
+
+main .tab-container .processo-seletivo .final-result p {
+  color: #062601;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  width: 278px;
+  line-height: 22px;
+  margin-left: 8px;
+}
+
+main .tab-container .processo-seletivo .final-result strong {
+  font-weight: 600;
+}
+
+main .tab-container .processo-seletivo .final-result .result-date {
+  border-radius: 25px;
+  border: 1px solid #0c6291;
+  width: 100px;
+  color: #0c6291;
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 18.75px;
+  padding: 1.5px 2px 1.5px 8.5px;
+}
+
+main .tab-container .processo-seletivo:nth-child(2) .final-result:nth-child(2) {
+  margin-top: 14.5px;
+}
+
+main .tab-container .processo-seletivo .acess-process {
+  margin-top: 21px;
+}
+
+main .acess-process i {
+  margin-left: 9.73px;
+}
+
+main .categorias-processos-seletivos h3 {
+  color: #666;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 31.5px;
+  margin-top: 130px;
+}
+
+main .categorias-processos-seletivos .categories {
+  gap: 40px;
+  margin-top: 20px;
+}
+
+main .categorias-processos-seletivos .category h4 {
+  color: #062601;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+main .categorias-processos-seletivos .category .category-item {
+  gap: 11px;
+  margin-top: 11px;
+}
+
+main .categorias-processos-seletivos .category .category-item .acess-process {
+  margin-top: 31px;
+}
+
+main .todos-os-processos {
+  margin-top: 117px;
+  margin-bottom: 100.36px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.63px;
+  border-radius: 5px;
+  background: #062601;
+  color: white;
+  border: none;
+}
+
+main .conheca-nossos-cursos {
+  margin-top: 101px;
+}
+
+main .conheca-nossos-cursos h2 {
+  color: #062601;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+main .conheca-nossos-cursos .description {
+  color: #4f4f4f;
+  margin-top: 20px;
+  width: 794px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+}
+
+main .conheca-nossos-cursos .cursos {
+  gap: 80px;
+  margin-top: 40px;
+  height: 116px;
+}
+
+main .conheca-nossos-cursos .curso {
+  margin-top: 40px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+main .conheca-nossos-cursos .cursos .curso h4 {
+  color: #062601;
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+main .conheca-nossos-cursos .cursos .curso .workload {
+  color: #848484;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+main .conhecer-cursos {
+  margin-top: 80px;
+  gap: 20px;
+}
+
+main .conhecer-cursos .conhecer-mais-cursos {
+  padding: 20px 105.06px 20px 105.05px;
+  justify-content: center;
+  gap: 9.81px;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+main .conhecer-cursos .conhecer-mais-cursos span {
+  width: 180px;
+}
+
+main .conhecer-cursos input {
+  padding: 21px 37px 21px 25px;
+  border-radius: 5px;
+  border: 1px solid #848484;
+  background: #fff;
+  width: 55%;
+}
+
+main .conhecer-cursos button {
+  padding: 20px 39.25px 20px 40px;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  background: #062601;
+}
+
+main .conheca-nossos-campi {
+  background: #062601;
+  margin-top: 100px;
+  color: white;
+}
+
+main .conheca-nossos-campi h2 {
+  padding-top: 101px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+main .conheca-nossos-campi p {
+  color: #adadad;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+  width: 760px;
+  margin-top: 19px;
+  margin-bottom: 41px;
+}
+
+main .conheca-nossos-campi figure {
+  padding-bottom: 230px;
+}
+
+main .ifrn-em-numeros {
+  margin-top: 115px;
+}
+
+main .ifrn-em-numeros h2 {
+  color: #062601;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+main .ifrn-em-numeros .description {
+  color: #4f4f4f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31.5px;
+  width: 770px;
+  margin-bottom: 40px;
+}
+
+main .ifrn-em-numeros .numeros {
+  gap: 20px;
+  position: relative;
+}
+
+.material-symbols-outlined,
+.fa-arrow-right {
+  align-self: center;
+}
+
+main .ifrn-em-numeros .numeros::after {
+  content: "";
+  width: 1250px;
+  height: 152px;
+  background: #e5f3e5;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 0;
+}
+
+.dark-mode .ifrn-em-numeros .numeros::after {
+  background-color: #ffffff;
+}
+
+main .ifrn-em-numeros .numeros .numero-e-textos-e-icone span {
+  margin-right: 10px;
+  margin-bottom: 16px;
+  color: #848484;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+main .ifrn-em-numeros .numeros .numero-e-textos-e-icone {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  z-index: 1;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+main .ifrn-em-numeros .numero-e-textos-e-icone .numero-e-textos {
+  margin-left: 10px;
+}
+
+main .ifrn-em-numeros .numero-e-textos-e-icone .numero-e-textos .numero {
+  color: #666;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+main
+  .ifrn-em-numeros
+  .numero-e-textos-e-icone
+  .numero-e-textos
+  .descricao-numero {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer .about {
+  margin-top: 128px;
+}
+
+footer .about .container {
+  gap: 50px;
+  justify-content: space-between;
+}
+
+footer .about .listagem {
+  gap: 54px;
+  width: 300px;
+}
+
+footer .about .listagem .title {
+  width: 100%;
+}
+
+footer .about .listagem .title h4 {
+  margin-bottom: 10px;
+  color: #062601;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+footer .about .listagem .listas {
+  gap: 11px;
+}
+
+footer .about .listagem .listas li {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+footer .about .listagem .secoes-sem-lista {
+  margin-top: 72px;
+  gap: 64px;
+}
+
+footer .servicos {
+  margin-top: 124px;
+  margin-bottom: 93px;
+}
+
+footer .servicos .container {
+  justify-content: center;
+}
+
+footer .servicos .servico {
+  gap: 10px;
+}
+
+footer .servicos .servico .texto-servico {
+  color: #666;
+  font-size: 15px;
+  font-weight: 500;
+  align-self: center;
+}
+
+footer .servicos .servico .img-servico {
+  align-self: center;
+}
+
+footer .container .e-mec {
+  border-radius: 10px;
+  border: 1px solid #0764a1;
+  width: 400px;
+  padding: 16px;
+}
+
+footer .informacoes-institucionais .e-mec .titulo {
+  width: 135px;
+}
+
+.container .e-mec {
+  justify-content: space-around;
+}
+
+.container .e-mec p {
+  color: #0764a1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.container .textos {
+  gap: 10px;
+}
+
+.container .textos .detalhes-ifrn {
+  gap: 6px;
+}
+
+.container .textos h3 {
+  color: #062601;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.container .textos .detalhe {
+  gap: 4px;
+}
+
+.container .textos .detalhe * {
+  color: #666;
+  font-size: 13px;
+}
+
+.container .textos strong {
+  font-weight: 600;
+}
+
+.container .textos p {
+  font-weight: 400;
+}
+
+footer .preto {
+  width: 100%;
+  height: 76px;
+  background: #062601;
+  margin-top: 195px;
+}
