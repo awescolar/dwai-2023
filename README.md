@@ -9,8 +9,8 @@ O Bootstrap é uma ferramenta gratuita para desenvolvimento HTML, CSS e JS. Crie
 
 Link do site oficial com a documentação e exemplos
 
-- (Versão em inglês - V5.3)(https://getbootstrap.com)
-- (Versão em português - V4.1)(https://getbootstrap.com.br)
+- [Versão em inglês - V5.3](https://getbootstrap.com)
+- [Versão em português - V4.1](https://getbootstrap.com.br)
 
 ## Principais Vantagens
 - Fácil de instalar;
