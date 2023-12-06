@@ -8,20 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style-2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <section class="container flex column">
-        <section class="isaque-dantas flex">
-            <div class="isaque-dantas-img flex column">
-                <figure class="flex"><img src="assets/img/isaque-dantas.jpg" alt=""></figure>
-                <div class="textos flex column">
-                    <h2>Isaque Dantas</h2>""
+    <section class="container">
+        <section class="isaque-dantas row">
+            <div class="isaque-dantas-img col-4">
+                <figure class="d-flex align-items-center"><img class="img-fluid" src="assets/img/isaque-dantas.jpg" alt=""></figure>
+                <div class="textos">
+                    <h2>Isaque Dantas</h2>
                     <p class="descricao">Programador Web</p>
                 </div>
             </div>
-            <div class="isaque-dantas-biografia flex column">
+            <div class="isaque-dantas-biografia col-8">
                 <h2>Isaque Dantas</h2>
                 <p class="descricao texto-biografia">Olá. Me chamo Isaque. Sou programador full-stack, e tenho o melhor
                     professor de design possível. Ele é mais gentil que Danilo, o que também não é nenhuma dificuldade.
@@ -33,54 +36,72 @@
         <section class="projetos-e-titulo">
             <h2>Meus projetos publicados</h2>
             <div class="linha-divisoria"></div>
-            <div class="projetos flex">
-                <div class="projeto flex column">
-                    <figure class="flex"><img src="assets/img/print-biblioteca.png" alt=""></figure>
-                    <div class="content flex column">
+            <div class="projetos row">
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/print-biblioteca.png" alt=""></figure>
+                    <div class="content">
                         <h2>Biblioteca de livros</h2>
                         <p class="descricao">A coleção que vai fazer você melhorar seu design. Hoje.</p>
                         <p><a href="https://isaque-dantas.000webhostapp.com/portfolio/biblioteca/index.html">Acesse o link</a></p>
                     </div>
                 </div>
-                <div class="projeto flex column">
-                    <figure class="flex"><img src="assets/img/site-piscinas.jpg" alt=""></figure>
-                    <div class="content flex column">
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/site-piscinas.jpg" alt=""></figure>
+                    <div class="content">
                         <h2>Site das Piscinas</h2>
                         <p class="descricao">Site institucional da Haas Piscinas</p>
                         <p><a href="https://isaque-dantas.000webhostapp.com/portfolio/piscinas/index.html">Acesse o link</a></p>
                     </div>
                 </div>
-                <div class="projeto destaque flex column">
-                    <figure class="flex"><img src="assets/img/print-figma.png" alt=""></figure>
-                    <div class="content flex column">
-                        <h2>Explore as funções do Figma</h2>
-                        <p class="descricao">O guia rápido para uma ferramenta poderosa e inteligente</p>
-                        <div class="destaque flex"><a href="https://isaque-dantas.000webhostapp.com/portfolio/funcoes-figma/page1.html">Acesse o link</a><a
-                                class="link-destaque" href="#">Destaque</a></div>
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/site-piscinas.jpg" alt=""></figure>
+                    <div class="content">
+                        <h2>Site das Piscinas</h2>
+                        <p class="descricao">Site institucional da Haas Piscinas</p>
+                        <p><a href="https://isaque-dantas.000webhostapp.com/portfolio/piscinas/index.html">Acesse o link</a></p>
                     </div>
                 </div>
-                <div class="projeto flex column">
-                    <figure class="flex"><img src="assets/img/print-tipografia.png" alt=""></figure>
-                    <div class="content flex column">
+                <div class="projeto destaque col-3">
+                    <figure><img class="img-fluid" src="assets/img/print-figma.png" alt=""></figure>
+                    <div class="content">
+                        <h2>Explore as funções do Figma</h2>
+                        <p class="descricao">O guia rápido para uma ferramenta poderosa e inteligente</p>
+                        <div class="destaque d-flex justify-content-between">
+                            <a href="https://isaque-dantas.000webhostapp.com/portfolio/funcoes-figma/page1.html">Acesse o link</a>
+                            <a link-destaque" href="#">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/print-tipografia.png" alt=""></figure>
+                    <div class="content">
                         <h2>Tipografia: definição e exemplos</h2>
                         <p class="descricao">A melhor introdução à tipografia que você verá hoje</p>
                         <p><a href="https://duas-mangas.000webhostapp.com">Acesse o link</a></p>
                     </div>
                 </div>
-                <div class="projeto flex column">
-                    <figure class="flex"><img src="assets/img/site-piscinas.jpeg" alt=""></figure>
-                    <div class="content flex column">
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/site-piscinas.jpeg" alt=""></figure>
+                    <div class="content">
                         <h2>Site das Piscinas</h2>
                         <p class="descricao">Site institucional da Haas Piscinas</p>
                         <p><a href="https://duas-mangas.000webhostapp.com/">Acesse o link</a></p>
                     </div>
                 </div>
-                <div class="projeto destaque flex column">
-                    <figure class="flex"><img src="assets/img/ifrn.png" alt=""></figure>
-                    <div class="content flex column">
+                <div class="projeto col-3">
+                    <figure><img class="img-fluid" src="assets/img/site-piscinas.jpeg" alt=""></figure>
+                    <div class="content">
+                        <h2>Site das Piscinas</h2>
+                        <p class="descricao">Site institucional da Haas Piscinas</p>
+                        <p><a href="https://duas-mangas.000webhostapp.com/">Acesse o link</a></p>
+                    </div>
+                </div>
+                <div class="projeto destaque col-3">
+                    <figure><img class="img-fluid" src="assets/img/ifrn.png" alt=""></figure>
+                    <div class="content">
                         <h2>Portal do IFRN</h2>
                         <p class="descricao">Montagem completa do novo portal do IFRN.</p>
-                        <div class="destaque flex"><a href="https://isaque-dantas.000webhostapp.com/portfolio/ifrn/index.html">Acesse o link</a><a
+                        <div class="destaque d-flex justify-content-between"><a href="https://isaque-dantas.000webhostapp.com/portfolio/ifrn/index.html">Acesse o link</a><a
                                 class="link-destaque" href="#">Destaque</a></div>
                     </div>
                 </div>
