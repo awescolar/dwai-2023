@@ -11,35 +11,149 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <style>
-        .col-4 div, .col-8 div{
-            background-color: red;
-            min-height: 100px;
-            margin-top: 50px;
-        }
-        .container{
-            border: 1px solid black;
-        }
-        .row .col-4 figure img{
-            width: 236px;
-            height: 240px;
-        }
-    </style>
-
     <section class="container">
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-4">
-                <figure class="text-center">
-                    <img src="assets/img/clara.jpeg" alt="" >
-                    <figcaption class="text-start">
-                        <h3>Clara Freire</h3>
-                        <p>Programador Web</p>
-                    </figcaption>
-                </figure>
+                <div class="card shadow border-0">
+                    <img src="assets/img/figure.png" alt="" >
+                    <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+
+                    </div>
+                        <h3 class="card-title">Clara Freire</h3>
+                        <p class="card-text">Programador Web</p>
+                    </div>
+                </div>
             </div>
             <div class="col-8">
-                <div></div>
+                <div class="card shadow h-100 border-0">
+                    <div class="card-body">
+                        <h3 class="card-title">Clara Freire</h3>
+                        <p class="card-text">Meu nome é Clara e faço parte do curso técnico integrado de Informática para a internet do IFRN. Sou programadora Front-end, fluente em inglês e trabalho bem em equipe.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="pb-2 pt-5 border-bottom">
+            <h3>Meus projetos publicados</h3>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-3">
+                <div class="card border-0 shadow h-100">
+                    <img src="assets/img/biblioteca.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Biblioteca do Professor</h5>
+                            <p class="card-text text-secondary">Biblioteca com informações sobre livros publicados por professores.</p>
+                        </div>
+                        <a href="#" class="text-link">Acesse o Link</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 shadow h-100">
+                    <img src="assets/img/piscinas.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Site das Piscinas</h5>
+                            <p class="card-text text-secondary">Site institucional da Nobre Piscinas.</p>
+                        </div>
+                        <a href="#" class="text-link">Acesse o Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-2 shadow border-warning h-100">
+                    <img src="assets/img/tipografia.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Site tipográfico</h5>
+                            <p class="card-text text-secondary">Site informativo sobre tipografia.</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="text-link">Acesse o Link</a>
+                            <a href="#" class="card-link text-warning">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-2 shadow border-warning h-100">
+                    <img src="assets/img/tipografia.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+
+                        </div>
+                        <h5 class="card-title">Site tipográfico</h5>
+                        <p class="card-text text-secondary">Site informativo sobre tipografia.</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="text-link">Acesse o Link</a>
+                            <a href="#" class="card-link text-warning">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pt-5 pb-5">
+            <div class="col-3">
+                <div class="card border-0 shadow h-100">
+                    <img src="assets/img/biblioteca.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Biblioteca do Professor</h5>
+                            <p class="card-text text-secondary">Biblioteca com informações sobre livros publicados por professores.</p>
+                        </div>
+                        <a href="#" class="text-link">Acesse o Link</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 shadow h-100">
+                    <img src="assets/img/piscinas.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Site das Piscinas</h5>
+                            <p class="card-text text-secondary">Site institucional da Nobre Piscinas.</p>
+                        </div>
+                        <a href="#" class="text-link">Acesse o Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-2 shadow border-warning h-100">
+                    <img src="assets/img/site_ifrn.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Portal do IFRN</h5>
+                            <p class="card-text text-secondary">Montagem completa do novo site portal do IFRN.</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="text-link">Acesse o Link</a>
+                            <a href="#" class="card-link text-warning">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-2 shadow border-warning h-100">
+                    <img src="assets/img/site_ifrn.png" alt="" class="rounded-top">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Portal do IFRN</h5>
+                            <p class="card-text text-secondary">Montagem completa do novo site portal do IFRN.</p>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="text-link">Acesse o Link</a>
+                            <a href="#" class="card-link text-warning">Destaque</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pb-5 border-top ">
+            <p class="text-secondary text-center pt-4">Informática para Internet - 2023</p>
         </div>
     </section>
 </body>
