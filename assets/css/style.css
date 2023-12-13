@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    --background: #FAFAFA;
+    --neutras-white:#fff;
+    --neutras-aco:#273644;
+    --Blue-2:#2D9CDB;
+    --Orange:#F2994A;
+    --neutras-prata-2:#77828C;
+    --Gray-3:#828282;
+}
+
+/*Classes-gerais--início*/
+
+.rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.card{
+    background-color: var(--neutras-white);
+    padding: 16px;
+    gap: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+/*Classes-gerais--final*/
+
+/*Tags-gerais--início*/
+img{
+    border-radius: 5px;
+}
+p,h3{
+    font-size: 16px;
+    color: var(--Gray-3);
+}
+h3{
+    color: var(--neutras-aco);
+}
+a{
+    color: var(--Blue-2);
+    font-size: 16px;
+}
+/*Tags-gerais--final*/
+
+body{
+    background-color: var(--background);
+    gap: 105px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 100px;
+}
+main .container{
+    max-width: 967px;
+    margin: auto;
+}
+
+main,.container{
+    max-width: 967px;
+    margin: auto;
+}
+
+.top{
+    display: flex;
+    gap: 29px;
+}
+
+.bottom h2{
+    padding-bottom: 16px;
+    margin-bottom: 26px;
+    margin-top: 70px;
+    border-bottom: 1px solid #D3DDE6;
+}
+.card p{
+    margin-bottom: 16px;
+    margin-top: 8px;
+}
+
+.last-iten{
+    border: 2px solid var(--Orange);
+}
+.last-iten nav{
+   justify-content: space-between;
+}
+.last-iten nav a:nth-child(2){
+   justify-content: space-between;
+   color: var(--Orange);
+}
+
+footer .container{
+    padding: 32px 0px 16px 0px;
+    text-align: center;
+    border-top: 1px solid #D3DDE6;
+}
+
+.foto-pessoal{
+    width: 236px;
+}
+
+@media (max-width:576px) {
+    .column-mobile{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .container{
+        padding: 24px;
+    }
+}
