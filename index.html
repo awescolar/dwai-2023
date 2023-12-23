@@ -1,345 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Montagem bootstrap - Leticia Miranda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Modelo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-
 <body>
-    <style>
-        body {
-            margin: 0;
-            font-family: "Lato", sans-serif;
-        }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        p {
-            margin: 0;
-        }
+    <!-- para alinhar no centro e delimitar o espaço de .container-->
+    <section class="container mt-5">
 
-        .container {
-            margin-top: 90px;
-            margin-bottom: 210px;
-        }
-
-        .myself,
-        .col-4 div,
-        .col-8 div {
-            height: 344px;
-        }
-
-        .myself,
-        .col-4 .text {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .myself .col-4 .card {
-            padding: 16px;
-            border: none;
-            border-radius: 5px;
-            background: var(--neutras-white, #FFF);
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        }
-
-        .myself h1,
-        h2 {
-            color: var(--neutras-aco, #273644);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%;
-            /* 24px */
-        }
-
-        .myself p {
-            color: var(--neutras-prata-2, #77828C);
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
-        }
-
-        .myself .card .minha-foto {
-            display: flex;
-            justify-content: center;
-        }
-
-        .myself .card .minha-foto .foto {
-            height: 240px;
-            width: 236px;
-            background-image: url(img/minhafoto.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .myself .col-8 {
-            border: none;
-            border-radius: 5px;
-            background: var(--neutras-white, #FFF);
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        }
-
-        .myself .col-8 .descr {
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        .container-projetos {
-            margin-top: 71px;
-        }
-
-        .projetos {
-            margin-top: 26px;
-        }
-
-        .projetos:nth-child(1) {
-            margin-top: 0;
-        }
-
-        .title {
-            padding-bottom: 16px;
-            border-bottom: 1px solid #D3DDE6;
-            color: var(--neutras-aco, #273644);
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 34px;
-        }
-
-        .projetos .col-3 .card {
-            padding: 0px;
-            display: flex;
-            flex-direction: column;
-            border-radius: 5px;
-            background: var(--neutras-white, #FFF);
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-        }
-
-        .projetos .col-3:nth-child(n+3) .card {
-            border: 2px solid #FFC107;
-        }
-
-        .projetos:nth-child(2) {
-            margin-top: 26px;
-        }
-
-        .projetos .col-3 .card .image {
-            height: 165px;
-            width: 100%;
-            background-image: url(img/foto.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .projetos .col-3:nth-child(1) .card .image {
-            background-image: url(img/foto.png)
-        }
-
-        .projetos .col-3:nth-child(2) .card .image {
-            background-image: url(img/site-piscinas.png)
-        }
-
-        .projetos .col-3:nth-child(3) .card .image {
-            background-image: url(img/foto\ \(2\).png)
-        }
-
-        .projetos .col-3:nth-child(4) .card .image {
-            background-image: url(img/foto\ \(2\).png)
-        }
-
-        .projetos .col-3 .card .text {
-            margin-top: 16px;
-            display: flex;
-            flex-direction: column;
-            padding: 16px;
-        }
-
-        .projetos .col-3 .card .text h3 {
-            color: var(--neutras-aco, #273644);
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 120%;
-        }
-
-        .projetos .col-3 .card .text p {
-            margin-top: 8px;
-            color: var(--neutras-prata-2, #77828C);
-            font-size: 16px;
-            font-weight: 400;
-            height: 32px;
-            line-height: 120%;
-        }
-
-        .projetos .col-3 .card .text .link {
-            margin-top: 12px;
-            color: #0D6EFD;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%;
-        }
-
-        .projetos .col-3 .card .text .destaque {
-            display: flex;
-            justify-content: space-between;
-            color: #FFC107;
-        }
-
-        .footer {
-            margin-top: 81px;
-            color: var(--Gray-3, #828282);
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 120%;
-            /* 19.2px */
-            display: flex;
-            justify-content: center;
-            padding: 32px 0px 16px 0px;
-            border-top: 1px solid #D3DDE6;
-        }
-    </style>
-    <div class="container">
-        <div class="row myself">
+        <!-- organizando a primeira linha com dados do perfil -->
+        <section class="row">
+            <!-- adicionando a foto e infos -->
             <div class="col-4">
-                <div class="card">
-                    <div class="minha-foto">
-                        <div class="foto"></div>
+                <!-- colocar uma fotinha aqui -->
+                <div class="card shadow-lg">
+                    <figure class="m-0">
+                        <img class="card-img-top" src="https://investidorsardinha.r7.com/wp-content/uploads/2020/09/bill-gates-empresario-co-fundador-da-microsoft-e-filantropo-scaled.jpg" alt="">
+                    </figure>
+                    <!-- abaixo da foto um bloco-->
+                    <div class="card-body">
+                        <h4 class="card-title">Meu nome</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <!-- dentro do bloco um nome e uma descricao-->
                     </div>
-                    <div class="text">
-                        <h2>Leticia Miranda</h2>
-                        <p>Progamador Web</p>
-                    </div>
-                </div>
+                </div>                
             </div>
+            
+            <!-- infos na Bio -->
             <div class="col-8">
-                <div class="descr">
-                    <h2>Leticia Miranda</h2>
-                    <p> Ola, me chamo Leticia Miranda e trabalho com programacão. Tenho conhecimento tanto em Front-end
-                        quanto em Back-end.</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-projetos">
-            <h1 class="title">Meus projetos publicados</h1>
-            <div class="row projetos">
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>CCHLA/ UFRN</h3>
-                            <p>Blog da UFRN</p>
-                            <a href="#" class="link">Acesse o link</a>
-                        </div>
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Meu nome</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>Site das Piscinas</h3>
-                            <p>Site institucional da Haas Piscinas</p>
-                            <a href="#" class="link">Acesse o link</a>
-                        </div>
+                <!-- colocar um titulo aqui -->
+                <!-- colocar um texto aqui -->
+            </div>
+        </section>
 
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>Site do Econassu</h3>
-                            <p>Site de evento acadêmico.</p>
-                            <div class="destaque">
-                                <a href="#" class="link">Acesse o link</a>
-                                <a class="link destaque" href="#">Destaque</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>CCHLA/ UFRN</h3>
-                            <p>Blog da UFRN</p>
-                            <div class="destaque">
-                                <a href="#" class="link">Acesse o link</a>
-                                <a class="link destaque" href="#">Destaque</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row projetos">
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>CCHLA/ UFRN</h3>
-                            <p>Blog da UFRN</p>
-                            <a href="#" class="link">Acesse o link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>Site das Piscinas</h3>
-                            <p>Site institucional da Haas Piscinas</p>
-                            <a href="#" class="link">Acesse o link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>Portal IFRN</h3>
-                            <p>Montagem completa do novo portal do IFRN.</p>
-                            <div class="destaque">
-                                <a href="#" class="link">Acesse o link</a>
-                                <a class="link destaque" href="#">Destaque</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="card">
-                        <div class="image"></div>
-                        <div class="text">
-                            <h3>Portal IFRN</h3>
-                            <p>Montagem completa do novo portal do IFRN.</p>
-                            <div class="destaque">
-                                <a href="#" class="link">Acesse o link</a>
-                                <a class="link destaque" href="#">Destaque</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row footer">
+        <!-- incluindo um titulozin com uma borda abaixo -->
+        <h4 class="mt-5 border-bottom pb-3">Meus projetos</h4>
+
+        <!-- aqui vou colocar meu portfólio -->
+        <section class="row">
+
+            <!-- aqui vou colocar um item do meu portfolio-->
             <div class="col-3">
-                <p>Informática para Internet - 2023</p>
+                <!-- botar uma fotinha do projeto -->
+                <!-- botar titulo do projeto -->
+                <!-- botar uma descrição do projeto -->
+                <!-- botar um link do meu projeto -->
             </div>
-        </div>
-    </div>
-</body>
 
+            <!--
+                aqui vou precisar repetir a col-3 por 7x
+                .
+                .
+                .
+            -->
+
+        </section>
+
+        <!-- vou incluir o rodapé da página-->
+        <section>
+            <!-- botar uma bordar pra cima -->
+            <!-- botar um textozin e centralizar -->
+        </section>
+
+    </section>
+    
+</body>
 </html>
