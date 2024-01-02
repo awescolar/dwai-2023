@@ -1,78 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
-
+    <title>PORTIFÓLIO - Talison Gustavo </title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+
 </head>
 <body>
-
-    <!-- para alinhar no centro e delimitar o espaço de .container-->
-    <section class="container mt-5">
-
-        <!-- organizando a primeira linha com dados do perfil -->
-        <section class="row">
-            <!-- adicionando a foto e infos -->
-            <div class="col-4">
-                <!-- colocar uma fotinha aqui -->
-                <div class="card shadow-lg">
-                    <figure class="m-0">
-                        <img class="card-img-top" src="https://investidorsardinha.r7.com/wp-content/uploads/2020/09/bill-gates-empresario-co-fundador-da-microsoft-e-filantropo-scaled.jpg" alt="">
-                    </figure>
-                    <!-- abaixo da foto um bloco-->
+    <section id="container-geral" class="container mt-5">
+        <div id="card-creator" class="row">
+            <div id="left" class="col-4">
+                <div class="card shadow">
+                    <img src="img/299745034_138583192203097_7267738223276281583_n.jpg" class="card-img-top" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Meu nome</h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
-                        <!-- dentro do bloco um nome e uma descricao-->
-                    </div>
-                </div>                
-            </div>
-            
-            <!-- infos na Bio -->
-            <div class="col-8">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h3 class="card-title">Meu nome</h3>
-                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <h2 class="card-title">Talison Gustavo</h2>
+                        <h5 class="card-text text-secondary">Estudante</h5>
                     </div>
                 </div>
-                <!-- colocar um titulo aqui -->
-                <!-- colocar um texto aqui -->
             </div>
-        </section>
-
-        <!-- incluindo um titulozin com uma borda abaixo -->
-        <h4 class="mt-5 border-bottom pb-3">Meus projetos</h4>
-
-        <!-- aqui vou colocar meu portfólio -->
-        <section class="row">
-
-            <!-- aqui vou colocar um item do meu portfolio-->
-            <div class="col-3">
-                <!-- botar uma fotinha do projeto -->
-                <!-- botar titulo do projeto -->
-                <!-- botar uma descrição do projeto -->
-                <!-- botar um link do meu projeto -->
+            <div id="right" class="col-8">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h2 class="card-title">Talison Gustavo</h2>
+                        <h6 class="card-text text-secondary">Olá, meu nome é Tay de Talison. Sou programador Front-end e acostumado a trabalhar com sabedoria e não na pressão.</h6>
+                    </div>
+                  </div>
             </div>
-
-            <!--
-                aqui vou precisar repetir a col-3 por 7x
-                .
-                .
-                .
-            -->
-
+        </div>
+        
+            <h3 class="title mt-5 pb-2 border-bottom">Meus projetos publicados</h3>
+            <section id="row-1" class="row row-gap-3 pt-2 pb-5 mb-5">
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="img/PROJETO.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">CCHLA/ UFRN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Blog da UFRN</h6>
+                            <a href="#" class="btn-primary">Acesse o link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="img/tabela periodica.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Site da tabela</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Site institucional da Haas Piscinas</h6>
+                            <a href="#" class="btn-primary">Acesse o link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning shadow">
+                        <img src="img/potifolio.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Site do Econassu</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Site de evento acadêmico.</h6>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn-primary">Acesse o link</a>
+                                <a href="#" class="btn-secundary link-warning">Destaque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning shadow">
+                        <img src="img/estudo.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Site do Econassu</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Site de evento acadêmico.</h6>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn-primary">Acesse o link</a>
+                                <a href="#" class="btn-secundary link-warning">Destaque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+            
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="img/tabela periodica.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">CCHLA/ UFRN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Blog da UFRN</h6>
+                            <a href="#" class="btn-primary">Acesse o link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card shadow">
+                        <img src="img/PROJETO.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Site do Projeto capa.</h6>
+                            <a href="#" class="btn-primary">Acesse o link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning shadow">
+                        <img src="img/perfil do if.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Portal do IFRN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Montagem completa do novo portal do IFRN.</h6>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn-primary">Acesse o link</a>
+                                <a href="#" class="btn-secundary link-warning">Destaque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card border-warning shadow">
+                        <img src="img/perfil do if.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Portal do IFRN</h5>
+                            <h6 class="card-subtitle mb-2 text-muted text-secondary">Montagem completa do novo portal do IFRN.</h6>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn-primary">Acesse o link</a>
+                                <a href="#" class="btn-secundary link-warning">Destaque</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="pt-5 border-top d-flex justify-content-center">
+                <h5 class="text-secondary">Informática para internet - 2023</h5>
+            </footer>
         </section>
-
-        <!-- vou incluir o rodapé da página-->
-        <section>
-            <!-- botar uma bordar pra cima -->
-            <!-- botar um textozin e centralizar -->
-        </section>
-
-    </section>
-    
 </body>
 </html>
